@@ -1,0 +1,6 @@
+5
+go
+stop
+waddle
+slide
+swim
