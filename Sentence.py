@@ -16,7 +16,7 @@ def getRandomLine(rsv):
 
 def makeSentence(rsv):
     pattern = getRandomLine(rsv)
-    print(pattern)
+    #print(pattern)
     pattern = re.sub(re.escape('noun'), lambda match: getRandomLine('noun.txt'), pattern)
     
     pattern.replace('\n', '')
