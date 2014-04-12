@@ -2,6 +2,12 @@ Factual Turtle
 ==============
 The factual turtle twitter application by David, Alec, Jered, and Ben.
 
+Dependencies
+------------
+Python 2.7.6 
+Twitter-Python (https://code.google.com/p/python-twitter/) 
+Simple json 
+
 Sentence.py
 -----------
 Generates sentences based on patterns pulled from .txt 
