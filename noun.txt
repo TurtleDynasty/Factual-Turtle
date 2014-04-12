@@ -1,4 +1,4 @@
-21
+23
 foot
 arm
 shell
@@ -20,3 +20,5 @@ troll
 umbrella
 molasses
 wow
+tower
+hanoi

@@ -1,4 +1,4 @@
-11
+19
 go
 stop
 waddle
@@ -10,3 +10,11 @@ jump
 crawl
 lick
 wiggle
+slice
+kill
+fight
+bite
+chomp
+fish
+run
+tickle
