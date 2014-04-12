@@ -3,21 +3,20 @@ import random, re
 def getRandomLine(rsv):
     file_h = open(rsv)
     limit = file_h.readline()
-    #limit.replace('\n', '')
     limit = int(limit)
     
-    line = random.randint(1, limit)
-    string = ''
+    line = random.randint(0, limit - 1)
     
     for x in range(line):
-        string = file_h.readline()
-    string.replace('\n', '')
+        file_h.readline()
+    string = file_h.readline()
+    #string.replace('\n', '')
     
     return(string)
 
 def makeSentence(rsv):
-    file_h = open(rsv)
     pattern = getRandomLine(rsv)
+    print(pattern)
     pattern = re.sub(re.escape('noun'), lambda match: getRandomLine('noun.txt'), pattern)
     
     pattern.replace('\n', '')
