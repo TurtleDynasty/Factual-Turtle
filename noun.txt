@@ -1,22 +1,63 @@
-21
+49
 foot
 arm
 shell
 face
 eye
-eyes
-arms
-feet
 tongue
 ball
-batt
+bat
 bicycle
 water
 ocean
 wave
 basket
-turtle
 troll
 umbrella
 molasses
-wow
+tower
+hanoi
+other turtle
+flipper
+fin
+tail
+nose
+mouth
+ear
+fish
+shark
+squid
+krill
+algae
+sea cucumbers
+sea sponge
+sea urchin
+oxygen
+fruit
+vegetable
+carrot
+predator
+prey
+volcano
+salt
+fisherman
+human
+hand
+scales
+skin
+hair
+bubble
+ocean
+dolphin
+whale
+cactus
+watermelon
+melon
+sea lion
+sea horse
+sea weed
+coral
+kibble
+egg
+beach
+coconut
