@@ -1,4 +1,4 @@
-24
+31
 bigger
 worst
 slowest
@@ -23,3 +23,10 @@ slow
 such
 many
 beautiful
+smooth
+rough
+silky
+scaly
+sinister
+deathly
+dangerous
