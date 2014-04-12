@@ -9,6 +9,7 @@ def getRandomLine(rsv):
     
     for x in range(line):
         file_h.readline()
+   
     phrase = file_h.readline()
     phrase.strip('\n')
     
@@ -16,10 +17,11 @@ def getRandomLine(rsv):
 
 def makeSentence(rsv):
     pattern = getRandomLine(rsv)
-    print(pattern + 'end')
-    pattern = re.sub(re.escape('noun'), lambda match: getRandomLine('noun.txt'), pattern)
-    
-    pattern.replace('\n', '')
-    return(pattern + 'endl')
+    pattern.strip('\n')
+    pattern = re.sub(re.escape('noun'), lambda x: getRandomLine('noun.txt'), pattern)
+    pattern = re.sub(re.escape('adj'), lambda x: getRandomLine('adjective.txt'), pattern)
+    pattern = re.sub(re.escape('verb'), lambda x: getRandomLine('verb.txt'), pattern)
+    pattern = re.sub(re.escape('adv'), lambda x: getRandomLine('adverb.txt'), pattern)
+    return(pattern)
 
 print(makeSentence('pattern.txt'))
