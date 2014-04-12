@@ -22,5 +22,3 @@ def makeSentence(rsv):
     pattern = re.sub(re.escape('adv'), lambda x: getRandomLine('adverb.txt'), pattern)
     
     return(pattern)
-
-print(makeSentence('pattern.txt'))
