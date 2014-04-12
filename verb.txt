@@ -1,6 +1,12 @@
-5
+11
 go
 stop
 waddle
 slide
 swim
+be
+have
+jump
+crawl
+lick
+wiggle
