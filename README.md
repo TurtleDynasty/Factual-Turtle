@@ -5,9 +5,10 @@ The factual turtle twitter application by David, Alec, Jered, and Ben.
 Dependencies
 ------------
 Python 2.7.6  
-Twitter-Python (https://code.google.com/p/python-twitter/)  
+Twitter-Python (https://code.google.com/p/python-twitter/)
+oauth
 bootstrap  
-Simple json  
+simple json  
 ajax  
 
 Sentence.py
