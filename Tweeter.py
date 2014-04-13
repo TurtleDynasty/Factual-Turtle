@@ -28,4 +28,4 @@ def main(phrase):
             return true
     else:
         return false
-#(main('@LAHacks')
+(main('@LAHacks'))

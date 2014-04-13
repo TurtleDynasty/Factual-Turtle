@@ -5,11 +5,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Factual Turtle Twitter bot</title>
-  <script type="text/javascript">
-    function submit(){
-      alert('the button got clicked')
-    }
-    </script>
   <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -23,7 +18,8 @@
         var sendTweet=function(tweetHandle){
           $.post('Tweeter.py', {turtle: tweetHandle})
           .done(function(){
-            console.log('', 'success: sent '+tweetHandle);})
+            console.log('', 'success: sent '+tweetHandle);
+            window.alert('OK! Now go check Twitter!');})
             .fail(function(jqXHR, textStatus, errorThrown){
               console.log(textStatus, errorThrown);
             });
@@ -46,7 +42,7 @@
             <div class="form-group">
               <input type="twitter" class="form-control" id="twitterInput" placeholder="@username">
               <button type="button" id="loading-example-btn" data-loading-text="Loading..." class="btn btn-primary" onclick="sendTweet($('#twitterInput').val())">
-  Loading state
+  Get Turtled
 </button>
 
               <br><br>
@@ -60,8 +56,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap.min.js"></script>
-
-    
 
   </body>
   </html>
