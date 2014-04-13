@@ -13,6 +13,14 @@ def getRandomLine(rsv):
     phrase = phrase.replace('\n', '')   #get rid of trailing returns cause those are gross
     
     return(phrase)
+    
+def countCheck(sentence):
+    senLen = len(sentence)
+    if (senLen > 140):
+        print("Too Big!")
+        return(makeSentence('pattern.txt'))
+    else:
+        return sentence
 
 def makeSentence(rsv):
     pattern = getRandomLine(rsv)        #get a random pattern
@@ -22,5 +30,8 @@ def makeSentence(rsv):
     pattern = re.sub(re.escape('verb'), lambda x: getRandomLine('verb.txt'), pattern)
     pattern = re.sub(re.escape('adv'), lambda x: getRandomLine('adverb.txt'), pattern)
     
+    pattern = countCheck(pattern)
+    
     return(pattern)
+    
 print(makeSentence('pattern.txt'))
