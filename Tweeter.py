@@ -1,8 +1,5 @@
-import httplib2
-import oauthlib
-import simplejson
-import twitter
-import Sentence
+import httplib2, oauthlib, simplejson
+import twitter, Sentence, mistype, random
 
 def main(phrase):
     if phrase[0] == '@' and phrase[1] != '@':
@@ -11,8 +8,8 @@ def main(phrase):
                   consumer_secret='QA5CIz4USVz0SuftfBXXyMwI6xHBnSrfxiDEAVrZFJi6qLUqa2',
                   access_token_key='2415264698-dg4OyNh4m9lxoSVjw6g9cqOroQi3lx22KvXm5n2',
                   access_token_secret='f1CH79PDiYANKNVCVcEBYeRKJTuef65nN3LqDlGyLtiid')
-
-        tweet = phrase +' '+ Sentence.makeSentence('pattern.txt')
+        n = random.randint(0, 5)
+        tweet = phrase +' '+ mistype.mash(Sentence.makeSentence('pattern.txt'), n)
         if len(tweet) > 140 :
             main(phrase)
         else:
@@ -28,7 +25,6 @@ def main(phrase):
                 #print("Tweet not sent.")
             
             status = api.PostUpdate(tweet)
-            return status
+            return true
     else:
         return false
-    
