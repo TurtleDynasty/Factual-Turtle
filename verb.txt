@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 19
+=======
+29
+>>>>>>> f67c8b2d807c137b1b369605ebbcebf40914b527
 go
 stop
 waddle
@@ -18,3 +22,21 @@ chomp
 fish
 run
 tickle
+<<<<<<< HEAD
+=======
+eat
+dive
+walk
+run
+summon
+create
+have babies with
+attack
+defend
+protect
+cannibalize
+envelope
+bury
+warm
+coddle
+>>>>>>> f67c8b2d807c137b1b369605ebbcebf40914b527
