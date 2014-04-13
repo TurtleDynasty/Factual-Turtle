@@ -8,7 +8,7 @@ def mistype(letter):
         w = {'q':1,'e':2,'a':3,'s':4,'d':5}
         return random.choice(w.keys())
     elif letter == 'e':
-        e = {'w':1,'s':2,'d':3,'f':4,'r':5}
+        e = {'w':1,'s':2,'d':3,'f':4,'r':5, 'ee':6}
         return random.choice(e.keys())
     elif letter == 'r':
         r = {'e':1,'d':2,'f':3,'g':4,'t':5}
@@ -26,7 +26,7 @@ def mistype(letter):
         i = {'u':1,'j':2,'k':3,'l':4,'o':5}
         return random.choice(i.keys())
     elif letter == 'o':
-        o = {'i':1,'k':2,'l':3,'p':4}
+        o = {'i':1,'k':2,'l':3,'p':4, 'ooo':5}
         return random.choice(o.keys())
     elif letter == 'p':
         p = {'o':1,'l':2}
@@ -101,4 +101,4 @@ def mash(phrase, recur):
         return(J)
     else:
         return mash(J, recur)
-print(mash('aba', 2))
+#print(mash('aba', 2))
