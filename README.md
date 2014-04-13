@@ -6,7 +6,9 @@ Dependencies
 ------------
 Python 2.7.6  
 Twitter-Python (https://code.google.com/p/python-twitter/)  
+bootstrap  
 Simple json  
+ajax  
 
 Sentence.py
 -----------
