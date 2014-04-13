@@ -7,7 +7,7 @@
   <title>Factual Turtle Twitter bot</title>
 
   <!-- Bootstrap -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="bootstrap.min.css" rel="stylesheet">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -16,11 +16,20 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       <![endif]-->
     </head>
-    <body style="background: url(./images/turtle.jpg) no-repeat center center fixed;
+    <body style="background: url(turtle.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;">
+    <script type="text/javascript">
+      $.ajax({
+        type:"POST",
+        url:"~/Tweeter.py",
+        data:{param:text}
+      }).done(function(o)){
+        alert("It worked!")
+      }
+    </script>
     <!-- <div style="background: url(./images/screen.png);"> -->
       <div class="row">
         <div class="col-md-5"> </div>
@@ -41,7 +50,7 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="bootstrap.min.js"></script>
 
   </body>
   </html>
