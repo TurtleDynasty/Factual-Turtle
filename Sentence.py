@@ -3,6 +3,7 @@ import random, re
 def getRandomLine(rsv):
     file_h = open(rsv)                  #a file handle for the .txt in question
     limit = file_h.readline()           #the number of lines to search per the .txt
+    limit = limit.replace('\n', '' )    #trim the return character
     limit = int(limit)                  #the number literal converted to int
     line = random.randint(0, limit - 1) #which line to search
     
@@ -22,3 +23,4 @@ def makeSentence(rsv):
     pattern = re.sub(re.escape('adv'), lambda x: getRandomLine('adverb.txt'), pattern)
     
     return(pattern)
+print(makeSentence('pattern.txt'))

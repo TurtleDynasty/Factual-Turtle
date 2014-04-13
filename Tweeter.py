@@ -12,19 +12,23 @@ def main(phrase):
                   access_token_key='2415264698-dg4OyNh4m9lxoSVjw6g9cqOroQi3lx22KvXm5n2',
                   access_token_secret='f1CH79PDiYANKNVCVcEBYeRKJTuef65nN3LqDlGyLtiid')
 
-        tweet = phrase + Sentence.makeSentence('pattern.txt')
-
-        #print("Tweet the following sentence?")
-        #print(tweet)
-        #ans = raw_input("(Y/N): ")
-
-        #if (ans == "Y" or ans == "y"):
-            #print("Tweet sent!")
-            #status = api.PostUpdate(tweet)
-        #else:
-            #print("Tweet not sent.")
+        tweet = phrase +' '+ Sentence.makeSentence('pattern.txt')
+        if len(tweet) > 140 :
+            main(phrase)
+        else:
             
-        status = api.PostUpdate(tweet)
-        return true
+            #print("Tweet the following sentence?")
+            #print(tweet)
+            #ans = raw_input("(Y/N): ")
+
+            #if (ans == "Y" or ans == "y"):
+                #print("Tweet sent!")
+                #status = api.PostUpdate(tweet)
+            #else:
+                #print("Tweet not sent.")
+            
+            status = api.PostUpdate(tweet)
+            return status
     else:
         return false
+    

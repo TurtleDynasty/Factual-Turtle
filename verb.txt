@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-19
-=======
-29
->>>>>>> f67c8b2d807c137b1b369605ebbcebf40914b527
+34
 go
 stop
 waddle
@@ -22,8 +18,6 @@ chomp
 fish
 run
 tickle
-<<<<<<< HEAD
-=======
 eat
 dive
 walk
@@ -39,4 +33,3 @@ envelope
 bury
 warm
 coddle
->>>>>>> f67c8b2d807c137b1b369605ebbcebf40914b527

@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-23
-=======
-49
->>>>>>> f67c8b2d807c137b1b369605ebbcebf40914b527
+65
 foot
 arm
 shell
@@ -19,11 +15,9 @@ basket
 troll
 umbrella
 molasses
-<<<<<<< HEAD
 wow
 tower
 hanoi
-=======
 tower
 hanoi
 other turtle
@@ -70,4 +64,3 @@ kibble
 egg
 beach
 coconut
->>>>>>> f67c8b2d807c137b1b369605ebbcebf40914b527
