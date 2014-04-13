@@ -1,6 +1,6 @@
 Factual Turtle
 ==============
-The factual turtle twitter application by David, Alec, Jered, and Ben.  
+The factual turtle twitter application by David, Alec, Jered, and Ben. http://factualturtle.herokuapp.com
 
 Dependencies
 ------------
