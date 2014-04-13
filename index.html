@@ -22,12 +22,13 @@
     -o-background-size: cover;
     background-size: cover;">
     <script type="text/javascript">
-      $.ajax({
-        type:"POST",
-        url:"~/Tweeter.py",
-        data:{param:text}
-      }).done(function(o)){
-        alert("It worked!")
+      $("click").click(function(){
+        $.ajax({
+          type:"POST",
+          url:"~/Tweeter.py",
+          data:{param:text},
+          success: alert("OK")
+        }
       }
     </script>
     <!-- <div style="background: url(./images/screen.png);"> -->
@@ -39,7 +40,7 @@
           <form class="form-inline" role="form">
             <div class="form-group">
               <input type="twitter" class="form-control" id="twitterInput" placeholder="@username">
-              <button type="button" class="btn btn-success">Submit!</button>
+              <button type="button" class="btn btn-success" id="click" >Submit!</button>
               <br>
             </div>
           </form>
