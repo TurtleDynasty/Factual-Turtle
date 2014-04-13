@@ -16,15 +16,15 @@ Generates sentences based on patterns pulled from .txt
 getRandomLine(rsv) returns a single trimmed line from a return-separated-value .txt file.  
 makeSentence(rsv) returns a generated sentence from one item from a return-separated-value .txt file. Recommend using pattern.txt
 
-.txt
+*.txt
 ----
 All .txt start with a number indicating the number of lines to follow.  
 Each line after is a word or phrase which can be used for generation of english nonsense.  
 The last line is an empty line. 
  
-Pattern defines sentences patterns which the application can use for generation of english nonsense.  
-Noun defines a list of nouns that can be used for generation of english nonsense.  
-Verb defines a list of verbs that can be used... and so on.  
+'pattern.txt' defines sentences patterns which the application can use for generation of english nonsense.  
+'noun.txt' defines a list of nouns that can be used for generation of english nonsense.  
+'verb.txt' defines a list of verbs that can be used... and so on.  
 
 mistype.py
 ----------
