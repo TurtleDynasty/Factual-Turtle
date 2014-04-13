@@ -25,9 +25,9 @@
       $("click").click(function(){
         $.ajax({
           type:"POST",
-          url:"~/Tweeter.py",
+          url:"./Tweeter.py",
           data:{param:text},
-          success: alert("OK")
+          success: window.alert("OK")
         }
       }
     </script>
