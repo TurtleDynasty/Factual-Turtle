@@ -5,7 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Factual Turtle Twitter bot</title>
-
+  <script type="text/javascript">
+    function submit(){
+      alert('the button got clicked')
+    }
+    </script>
   <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -15,6 +19,17 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       <![endif]-->
+      <script>
+        var sendTweet=function(tweetHandle){
+          $.post('Tweeter.py', {turtle: tweetHandle})
+          .done(function(){
+            console.log('', 'success: sent '+tweetHandle);})
+            .fail(function(jqXHR, textStatus, errorThrown){
+              console.log(textStatus, errorThrown);
+            });
+          };
+        
+      </script>
     </head>
     <body style="background: url(turtle.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -30,7 +45,10 @@
           <form class="form-inline" role="form">
             <div class="form-group">
               <input type="twitter" class="form-control" id="twitterInput" placeholder="@username">
-              <button type="button" class="btn btn-success" id="theOnlyButton" onclick="submit()">Submit!</button>
+              <button type="button" id="loading-example-btn" data-loading-text="Loading..." class="btn btn-primary" onclick="sendTweet($('#twitterInput').val())">
+  Loading state
+</button>
+
               <br><br>
             </div>
           </form>
@@ -43,12 +61,7 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap.min.js"></script>
 
-    <script type="text/javascript">
-    function submit(){
-      window.alert('the button got clicked')
-       
-    }
-    </script>
+    
 
   </body>
   </html>
