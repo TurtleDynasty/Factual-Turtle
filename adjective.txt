@@ -1,4 +1,4 @@
-31
+38
 bigger
 worst
 slowest
@@ -30,3 +30,10 @@ scaly
 sinister
 deathly
 dangerous
+limp
+long
+teal
+soft
+straight
+curved
+ready

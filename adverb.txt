@@ -1,4 +1,4 @@
-13
+20
 very
 quite
 together
@@ -12,3 +12,10 @@ stealthily
 voraciously
 intelligently
 craftily
+humanely
+cruely
+slyly
+carefully
+cleverly
+calmly
+cooly
