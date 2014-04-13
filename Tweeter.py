@@ -9,7 +9,7 @@ def main(phrase):
                   access_token_key='2415264698-dg4OyNh4m9lxoSVjw6g9cqOroQi3lx22KvXm5n2',
                   access_token_secret='f1CH79PDiYANKNVCVcEBYeRKJTuef65nN3LqDlGyLtiid')
         n = random.randint(0, 5)
-        tweet = phrase +' '+ mistype.mash(Sentence.makeSentence('pattern.txt'), n)
+        tweet = phrase +' '+mistype.mash(Sentence.makeSentence('pattern.txt'), n)
         if len(tweet) > 140 :
             main(phrase)
         else:
@@ -28,3 +28,4 @@ def main(phrase):
             return true
     else:
         return false
+#(main('@LAHacks')
