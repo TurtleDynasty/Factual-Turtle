@@ -17,7 +17,6 @@ def getRandomLine(rsv):
 def countCheck(sentence):
     senLen = len(sentence)
     if (senLen > 140):
-        print("Too Big!")
         return(makeSentence('pattern.txt'))
     else:
         return sentence
