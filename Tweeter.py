@@ -4,7 +4,7 @@ import simplejson
 import twitter
 import Sentence
 
-def buildTweet(phrase):
+def main(phrase):
     if phrase[0] == '@' and phrase[1] != '@':
     
         api = twitter.Api(consumer_key='5T8HEXRlLhxcnMU5RhC8UcX4y',

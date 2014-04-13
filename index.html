@@ -7,7 +7,7 @@
   <title>Factual Turtle Twitter bot</title>
 
   <!-- Bootstrap -->
-  <link href="bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -21,27 +21,17 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;">
-    <script type="text/javascript">
-      $("click").click(function(){
-        $.ajax({
-          type:"POST",
-          url:"./Tweeter.py",
-          data:{param:text},
-          success: window.alert("OK")
-        }
-      }
-    </script>
-    <!-- <div style="background: url(./images/screen.png);"> -->
-      <div class="row">
+    
+      <div class="row" style="background-color: rgb(250, 240, 225)">
         <div class="col-md-5"> </div>
-        <div class="col-md-3">
+        <div class="col-md-3" >
           <h1>Hello, <a href="https://www.youtube.com/watch?v=-Zf8t-uAzhk">Franklin!</a></h1>
           <p class="lead">Enter your twitter handle!</p>
           <form class="form-inline" role="form">
             <div class="form-group">
               <input type="twitter" class="form-control" id="twitterInput" placeholder="@username">
               <button type="button" class="btn btn-success" id="click" >Submit!</button>
-              <br>
+              <br><br>
             </div>
           </form>
         </div>
@@ -53,5 +43,14 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap.min.js"></script>
 
+    <script type="text/javascript">
+      $("click").click(function(){
+        $.ajax({
+          data: getElementByID('twitterInput')
+          url: 'Tweeter.py', success:window.alert("OK!");
+        });
+      });
+    </script>
+    
   </body>
   </html>
