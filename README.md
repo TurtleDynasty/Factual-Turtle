@@ -1,6 +1,7 @@
 Factual Turtle
 ==============
-The factual turtle twitter application by David, Alec, Jered, and Ben. http://factualturtle.herokuapp.com
+The factual turtle twitter application by David, Alec, Jered, and Ben. http://factualturtle.herokuapp.com  
+Because heroku makes use of git, this repository is only a workspace and may not always be up to date with live technology. For more information about how our app works, please contact a collaborator or tweet us @FactualTurtle.
 
 Dependencies
 ------------
