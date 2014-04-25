@@ -12,7 +12,7 @@ bootstrap
 simple json  
 ajax  
 
-Sentence.py
+sentence.py
 -----------
 Generates sentences based on patterns pulled from .txt  
 getRandomLine(rsv) returns a single trimmed line from a return-separated-value .txt file.  
